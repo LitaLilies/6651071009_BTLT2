@@ -1,1 +1,32 @@
-
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Tạo form và các điều khiển trên form</title>
+  </head>
+  <body>
+    <form id="frmLogin">
+      <table border="1">
+        <tr>
+          <td colspan="2" align="center"><b>Đăng nhập</b></td>
+        </tr>
+        <tr>
+          <td>Mã người dùng:</td>
+          <td><input type="text" id="txtUser" value="ptnhung"></td>
+        </tr>
+        <tr>
+          <td>Mật khẩu:</td>
+          <td><input type="password" id="txtPass" value="12345678"></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>
+            <input type="button" id="btnOK" value="Đồng ý" onclick="document.getElementById('lblUser').innerText = document.getElementById('txtUser').value;">
+          </td>
+        </tr>
+      </table>
+    </form>
+    <br>
+    <div id="lblUser" style="background-color:lightblue; width:200px;"></div>
+  </body>
+</html>
