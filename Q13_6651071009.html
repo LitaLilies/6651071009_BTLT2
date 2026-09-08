@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Tạo form và các điều khiển</title>
+</head>
+<body>
+  <form id="frmDL">
+    <table border="1" bgcolor="#FFFFCC">
+      <tr>
+        <td colspan="2" align="center"><b>Đăng ký du lịch</b></td>
+      </tr>
+      <tr>
+        <td>Họ và tên</td>
+        <td><input type="text" id="txtHoten" size="30" value="Phạm Ngọc Cẩm Đào"></td>
+      </tr>
+      <tr>
+        <td>Địa chỉ</td>
+        <td><input type="text" id="txtDiachi" size="30" value="227 Nguyễn Văn Cừ"></td>
+      </tr>
+      <tr>
+        <td>Điện thoại</td>
+        <td><input type="text" id="txtDienthoai" size="15" value="8351056"></td>
+      </tr>
+      <tr>
+        <td>Khách Việt Nam</td>
+        <td><input type="checkbox" id="chkVN" checked></td>
+      </tr>
+      <tr>
+        <td>Chọn tour</td>
+        <td>
+          <select id="cboTour">
+            <optgroup label="Miền Bắc">
+              <option value="Hà Nội - Hạ Long - Sapa">Hà Nội - Hạ Long - Sapa</option>
+              <option value="Hà Nội - Chùa Hương - Ninh Bình">Hà Nội - Chùa Hương - Ninh Bình</option>
+              <option value="Hà Nội - Cát Bà - Tuần Châu">Hà Nội - Cát Bà - Tuần Châu</option>
+            </optgroup>
+            <optgroup label="Miền Trung">
+              <option value="Huế - Bạch Mã - Đà Nẵng">Huế - Bạch Mã - Đà Nẵng</option>
+              <option value="Nha Trang - Đà Lạt">Nha Trang - Đà Lạt</option>
+              <option value="Buôn mê thuột - Gia lai - Kontum" selected>Buôn Mê Thuột - Gia Lai - Kontum</option>
+            </optgroup>
+            <optgroup label="Miền Nam">
+              <option value="TP.HCM - Cần Thơ - Cà Mau">TP.HCM - Cần Thơ - Cà Mau</option>
+              <option value="TP.HCM - Mỹ Tho">TP.HCM - Mỹ Tho</option>
+            </optgroup>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>Phương tiện</td>
+        <td>
+          <input type="radio" name="pt" id="rdMaybay" value="Máy bay"> Máy bay
+          <input type="radio" name="pt" id="rdXeoto" value="Xe ô tô" checked> Xe ô tô
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" align="center">
+          <fieldset style="width: 350px;">
+            <legend align="left" style="font-style: italic; color: red;">Số lượng đoàn khách</legend>
+            Người lớn <input type="text" id="txtNL" size="5" value="6">
+            Trẻ em <input type="text" id="txtTE" size="5" value="4">
+          </fieldset>
+        </td>
+      </tr>
+      <tr>
+        <td>Ghi chú thêm</td>
+        <td><textarea id="txtGhichu" style="width: 300px; rows: 3;">Có 2 trẻ em dưới 6 tuổi
+Có 2 người ăn chay</textarea></td>
+      </tr>
+      <tr>
+        <td colspan="2" align="center">
+          <input type="button" id="btnOK" value="Đồng ý" onclick="document.getElementById('lblTB').innerText='Bạn đã đăng ký thành công!!!';">
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" align="center"><div id="lblTB" style="color: orange; font-weight: bold;"></div></td>
+      </tr>
+    </table>
+  </form>
+</body>
+</html>
